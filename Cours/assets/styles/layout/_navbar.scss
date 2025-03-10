@@ -1,0 +1,16 @@
+nav {
+  background: $color1;
+  // ctrl + d = sélectionne également le suivant
+  border-radius: 10px;
+
+  ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 40px;
+
+    li {
+      list-style: none;
+    }
+  }
+}

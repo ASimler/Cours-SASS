@@ -1,0 +1,21 @@
+// Dans ce fichier on reprend les réglages de base du site. Par exemple : même police pour tout le monde ou tous les li ont telles spécificités... etc.
+
+// Dans ce fichier on déclare aussi les variables et mixins.
+
+// Créer des variables en sass :
+$color1: pink;
+$color2: grey;
+$white: whitesmoke;
+$black: rgb(29, 29, 29);
+
+// Créer des mixins :
+@mixin CenterChild {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+body {
+  background: $white;
+}

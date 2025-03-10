@@ -1,0 +1,28 @@
+// le fichier sass .scss nécessite d'être compilé pour fonctionner. On utilise un plugin qui va le compiler dans un dossier "CSS".
+
+// On écrit dans le fichier .scss qui va retranscrire notre code en .css qui va être lié au fichier HTML.
+
+// pour visualiser les préfixes de navigateur dans le .css qui vont permettre d'être visualisé par tous les navigateurs internet : télécharger sur git hub et intégrer dans les settings.json
+
+
+
+// **************************************************************************************
+
+// Ce fichier index.scss existe pour importer tous les autres fichiers _*.scss du projet :
+
+// **************************************************************************************
+
+// importer les settings en premier car ils continennet les variables et mixins utilisés par la suite 
+@import "./settings.scss";
+
+@import "./layout/navbar";
+@import "./layout/header";
+@import "./layout/footer";
+@import "./layout/section";
+@import "./components/buttons";
+@import "./components/carousel";
+@import "./components/form";
+@import "./pages/about";
+@import "./pages/home";
+
+// attention : dans quelques années peut-être que le @import ne sera plus à utiliser : voirle cas échéant quoi utiliser à la place.
