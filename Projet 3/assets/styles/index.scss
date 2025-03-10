@@ -1,4 +1,11 @@
-body {
-  background: blue;
-  color: white;
-}
+@import "./settings";
+
+@import "./header/header";
+@import "./main/main";
+@import "./main/nav&network";
+@import "./main/main-top";
+@import "./main/main-bottom";
+@import "./footer/footer-left";
+@import "./footer/footer-right";
+
+
