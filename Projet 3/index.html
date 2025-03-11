@@ -91,40 +91,46 @@
 
       <!-- Third section for main bottom with two children div -->
       <section class="main-bottom">
-        <!-- Left part -->
-        <div class="mb-left">
-          <div class="main-info">
-            <h2>April 24, 2017</h2>
-            <h3>Sed magna <br />ipsum faucibus</h3>
-            <div class="secb-img">
-              <img src="./assets/img/pic02.jpg" alt="Forest Land in sunset" />
+        <div class="main-bottom-container">
+          <!-- Left part -->
+          <div class="mb-left">
+            <div class="main-info">
+              <h2>April 24, 2017</h2>
+              <h3>Sed magna <br />ipsum faucibus</h3>
+              <div class="secb-img">
+                <img src="./assets/img/pic02.jpg" alt="Forest Land in sunset" />
+              </div>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit
+                quod quisquam, illo culpa voluptate ad possimus fuga molestiae
+                repudiandae vitae!
+              </p>
+              <!-- <button class="button">Full story</button> -->
             </div>
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit
-              quod quisquam, illo culpa voluptate ad possimus fuga molestiae
-              repudiandae vitae!
-            </p>
-            <button class="button">Full story</button>
+          </div>
+          <!-- Right part -->
+          <div class="mb-right">
+            <div class="main-info">
+              <h2>April 22, 2017</h2>
+              <h3>Primis Eget <br />Imperdiet Lorem</h3>
+              <div class="secb-img">
+                <img
+                  src="./assets/img/pic03.jpg"
+                  alt="landscape width mountains in sunset"
+                />
+              </div>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Temporibus architecto eos amet nobis totam, asperiores nostrum
+                molestiae dolore possimus ipsam.
+              </p>
+              <!-- <button class="button">Full story</button> -->
+            </div>
           </div>
         </div>
-        <!-- Right part -->
-        <div class="mb-right">
-          <div class="main-info">
-            <h2>April 22, 2017</h2>
-            <h3>Primis Eget <br />Imperdiet Lorem</h3>
-            <div class="secb-img">
-              <img
-                src="./assets/img/pic03.jpg"
-                alt="landscape width mountains in sunset"
-              />
-            </div>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Temporibus architecto eos amet nobis totam, asperiores nostrum
-              molestiae dolore possimus ipsam.
-            </p>
-            <button class="button">Full story</button>
-          </div>
+        <div class="main-bottom-btn">
+          <button class="button">Full story</button>
+          <button class="button">Full story</button>
         </div>
       </section>
     </main>
@@ -133,13 +139,21 @@
       <!-- Footer left-part : form -->
       <section class="footer-left">
         <form action="#" method="post">
-          <label for="name" class="f-titles">Name</label>
-          <input type="text" id="name" />
-          <label for="email" class="f-titles">Email</label>
-          <input type="text" id="email" />
-          <label for="message" class="f-titles">Message</label>
-          <textarea id="message"></textarea>
-          <input type="submit" value="Send message" class="button" />
+          <div>
+            <label for="name" class="f-titles">Name</label>
+            <input type="text" id="name" />
+          </div>
+          <div>
+            <label for="email" class="f-titles">Email</label>
+            <input type="text" id="email" />
+          </div>
+          <div>
+            <label for="message" class="f-titles">Message</label>
+            <textarea id="message" cols="1" rows="20"></textarea>
+          </div>
+          <div>
+            <input type="submit" value="Send message" class="button" />
+          </div>
         </form>
       </section>
 
