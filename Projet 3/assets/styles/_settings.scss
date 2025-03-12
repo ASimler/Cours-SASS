@@ -29,10 +29,6 @@ body {
   font-family: Font2;
   transition: 0.2s;
 
-  @media screen and (max-width: 500px) {
-    background-size: 500%;
-  }
-
   ul {
     display: flex;
     justify-content: space-around;
