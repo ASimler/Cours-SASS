@@ -1,0 +1,42 @@
+// Fonts import
+@font-face {
+  font-family: "Font1";
+  src: url(./fonts/Allura-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Font2";
+  src: url(./fonts/Poppins-Medium.ttf);
+}
+
+@font-face {
+  font-family: "Font3";
+  src: url(./fonts/Roboto-Light.ttf);
+}
+
+// Variables
+$white1: white;
+$white2: rgb(250, 248, 229);
+$black1: black;
+$black2: #21201E;
+$color1: #A67245;
+
+// Mixins
+@mixin titleh2 {
+  font-family: Font2, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  h2 {
+    @include titleh2;
+    color: white
+    ;
+  }
+}
