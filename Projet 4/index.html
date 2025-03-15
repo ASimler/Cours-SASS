@@ -26,7 +26,7 @@
     <header>
       <nav class="nav-header">
         <ul class="nav-left">
-          <li>Resto</li>
+          <li><span>Resto</span></li>
         </ul>
 
         <ul class="nav-mid">
@@ -88,7 +88,8 @@
               doloremque. Soluta suscipit laudantium a laboriosam! Natus et
               incidunt dolore delectus ratione.
             </p>
-            <img src="./assets/img/avatar-01.jpg" alt="Chef cuisinier homme" />
+            <div class="avatar">
+            </div>
             <p class="name">Russel Stephens</p>
             <p class="function">Chef Cook</p>
           </div>
@@ -100,12 +101,14 @@
 
       <!-- ------------------------------- SECTION 2 ------------------------------- -->
       <section class="sec2">
-        <span>Discover</span>
-        <img
-          id="logo-resto-gray"
-          src="./assets/img/ic-plate.png"
-          alt="Icone couteau/fouchette gris"
-        />
+        <div class="sec2-title">
+          <span>Discover</span>
+          <img
+            id="logo-resto-gray"
+            src="./assets/img/ic-plate.png"
+            alt="Icone couteau/fouchette gris"
+          />
+        </div>
 
         <nav class="nav-main">
           <ul>
@@ -119,9 +122,9 @@
 
         <div class="sec2-container">
           <!-- *************************** Left part *************************** -->
-          <div class="sec2-left">
+          <div class="sec2-menus-container">
             <!-- ********************** Encart 1 ********************** -->
-            <div>
+            <div class="menus">
               <div>
                 <img
                   src="./assets/img/dish-item-01.jpg"
@@ -137,7 +140,7 @@
               </div>
             </div>
             <!-- ********************** Encart 2 ********************** -->
-            <div>
+            <div class="menus">
               <div>
                 <img
                   src="./assets/img/dish-item-03.jpg"
@@ -153,7 +156,7 @@
               </div>
             </div>
             <!-- ********************** Encart 3 ********************** -->
-            <div>
+            <div class="menus">
               <div>
                 <img
                   src="./assets/img/dish-item-05.jpg"
@@ -169,7 +172,7 @@
               </div>
             </div>
             <!-- ********************** Encart 4 ********************** -->
-            <div>
+            <div class="menus">
               <div>
                 <img
                   src="./assets/img/dish-item-07.jpg"
@@ -187,9 +190,9 @@
             <!-- End left part -->
           </div>
           <!-- *************************** Right part *************************** -->
-          <div class="sec2-right">
+          <div class="sec2-menus-container">
             <!-- ********************** Encart 5 ********************** -->
-            <div>
+            <div class="menus">
               <div>
                 <img
                   src="./assets/img/dish-item-02.jpg"
@@ -205,7 +208,7 @@
               </div>
             </div>
             <!-- ********************** Encart 6 ********************** -->
-            <div>
+            <div class="menus">
               <div>
                 <img
                   src="./assets/img/dish-item-04.jpg"
@@ -221,7 +224,7 @@
               </div>
             </div>
             <!-- ********************** Encart 7 ********************** -->
-            <div>
+            <div class="menus">
               <div>
                 <img
                   src="./assets/img/dish-item-06.jpg"
@@ -237,7 +240,7 @@
               </div>
             </div>
             <!-- ********************** Encart 8 ********************** -->
-            <div>
+            <div class="menus">
               <div>
                 <img
                   src="./assets/img/dish-item-08.jpg"
@@ -281,24 +284,54 @@
 
           <!-- *************************** Left part *************************** -->
           <div class="sec3-right">
-            <div class="sec3-right-title">
-              <span>Reservation</span>
-              <h2>Online Booking</h2>
-              <img
-                id="logo-resto-gray"
-                src="./assets/img/ic-plate.png"
-                alt="Icone couteau/fouchette gris"
-              />
+            <div class="sec3-right-container">
+              <div class="sec3-right-title">
+                <span>Reservation</span>
+                <h2>Online Booking</h2>
+                <img
+                  id="logo-resto-gray"
+                  src="./assets/img/ic-plate.png"
+                  alt="Icone couteau/fouchette gris"
+                />
+              </div>
+              <form action="#" method="post">
+                <!-- il faut mettre les inputs dans des div pour pouvoir leur mettre un ::before -->
+                 <div class="inp-with-before">
+                  <input list="Number-of-people" id="Nb-people" placeholder="People"/>
+                  <i id="datalist-icon" class="fa-solid fa-chevron-down"></i>
+                  <datalist id="Number-of-people">
+                    <option value="1"></option>
+                    <option value="2"></option>
+                    <option value="3"></option>
+                    <option value="4"></option>
+                    <option value="5"></option>
+                    <option value="6"></option>
+                    <option value="7"></option>
+                    <option value="8"></option>
+                    <option value="9"></option>
+                    <option value="10"></option>
+                  </datalist>
+                </div>
+                <div class="inp-with-before">
+                  <input type="date" id="date" />
+                </div>
+                <div class="inp-with-before">
+                  <input type="time" id="time" />
+                </div>
+                <div class="inp-with-before">
+                  <input type="text" id="name" placeholder="Name" />
+                </div>
+                <div class="inp-with-before">
+                  <input type="text" id="phone-number" placeholder="Phone" />
+                </div>
+                <div class="inp-with-before">
+                  <input type="text" id="email" placeholder="Email" />
+                </div>
+                <div class="btn-submit">
+                  <input type="submit" id="submit" value="Book Now" />
+                </div>
+              </form>
             </div>
-            <form action="">
-              <input list="Number-of-people" id="Nb-people" />
-              <input type="date" id="date" />
-              <input type="time" id="time" />
-              <input type="text" id="name" placeholder="Name" />
-              <input type="text" id="phone-number" placeholder="Phone" />
-              <input type="text" id="email" placeholder="Email" />
-              <input type="submit" id="submit" value="Book Now" />
-            </form>
           </div>
         </div>
       </section>
@@ -317,16 +350,18 @@
 
         <div class="sec4-main">
           <!-- *************************** Left part *************************** -->
-          <div class="sec4-main-left">
+           <!-- *************************** Main part *************************** -->
+          <div class="sec4-main-container">
+
             <!-- Fisrt child -->
-            <div>
-              <div>
-                <div>
+            <div class="sec4-main-1">
+              <div class="sec4-ml-top">
+                <div class="date">
                   <p class="day">08</p>
                   <p class="month">July</p>
                 </div>
               </div>
-              <div>
+              <div class="sec4-ml-right">
                 <h5>Night Inspirescu Party</h5>
                 <p class="adress">
                   <i class="fa-solid fa-location-dot"></i> Restaurant Resto
@@ -337,14 +372,14 @@
             </div>
 
             <!-- Second child -->
-            <div>
-              <div>
+            <div class="sec4-main-2">
+              <div class="sec4-ml-bottom">
                 <div class="date">
                   <p class="day">09</p>
                   <p class="month">July</p>
                 </div>
               </div>
-              <div>
+              <div class="sec4-ml-right">
                 <h5>DJ RobagRuhme</h5>
                 <p class="adress">
                   <i class="fa-solid fa-location-dot"></i> Restaurant Resto
@@ -353,10 +388,10 @@
                 <p class="buy">Buy tickets</p>
               </div>
             </div>
-            <!-- *************************** Right part *************************** -->
-            <div class="sec4-main-right">
-              <!-- Container -->
-              <div>
+
+            <!-- Third child -->
+            <div class="sec4-main-3">
+              <div class="sec4-mr-container">
                 <div class="date">
                   <p class="day">10</p>
                   <p class="month">July</p>
@@ -376,12 +411,14 @@
       <!-- ------------------------------- SECTION 5 ------------------------------- -->
       <section class="sec5">
         <div>
-          <p>
+          <p class="sec5-text">
+            <!-- <span class="fa-solid fa-quote-left"></span> -->
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur
             nulla, soluta asperiores modi amet illo eligendi fuga necessitatibus
             dolorum, in omnis at ipsum minima ex maxime minus alias dolores quas
             natus recusandae earum. Quo, pariatur odio temporibus laborum quia
             tempora.
+            <!-- <span class="fa-solid fa-quote-right"></span> -->
           </p>
           <p class="name">Russel Stephens</p>
           <p class="function">CEO - HeadPassion</p>
@@ -391,40 +428,41 @@
 
     <!-- ================================ FOOTER ================================ -->
     <footer>
-      <!-- *************************** Left part *************************** -->
-      <div class="footer-left">
-        <span>Resto</span>
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil ipsa
-          nesciunt explicabo sint est nulla laboriosam esse omnis vitae aliquam.
-        </p>
-      </div>
-      <!-- *************************** Right part *************************** -->
-      <div class="footer-right">
-        <div>
-          <h6>Newsletter</h6>
-          <input
-            type="text"
-            id="footer-email"
-            placeholder="Your email address"
-          />
+      <div class="footer-container">
+        <!-- *************************** Left part *************************** -->
+        <div class="footer-left">
+          <span>Resto</span>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, excepturi! Aliquam debitis ipsa beatae sunt enim architecto, maxime blanditiis, ea amet voluptatum dolorum error rerum!
+          </p>
         </div>
-        <div>
-          <h6>FOLLOW US:</h6>
-          <ul>
-            <li>
-              <a href=""><i class="fa-brands fa-facebook-f"></i></a>
-            </li>
-            <li>
-              <a href=""><i class="fa-brands fa-twitter"></i></a>
-            </li>
-            <li>
-              <a href=""><i class="fa-brands fa-instagram"></i></a>
-            </li>
-            <li>
-              <a href=""><i class="fa-brands fa-pinterest"></i></a>
-            </li>
-          </ul>
+        <!-- *************************** Right part *************************** -->
+        <div class="footer-right">
+          <div>
+            <h6>Newsletter</h6>
+            <input
+              type="text"
+              id="footer-email"
+              placeholder="Your email address"
+            />
+          </div>
+          <div class="networks">
+            <h6>FOLLOW US :</h6>
+            <ul>
+              <li>
+                <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+              </li>
+              <li>
+                <a href=""><i class="fa-brands fa-twitter"></i></a>
+              </li>
+              <li>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+              </li>
+              <li>
+                <a href=""><i class="fa-brands fa-pinterest"></i></a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </footer>
