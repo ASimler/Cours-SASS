@@ -88,8 +88,7 @@
               doloremque. Soluta suscipit laudantium a laboriosam! Natus et
               incidunt dolore delectus ratione.
             </p>
-            <div class="avatar">
-            </div>
+            <div class="avatar"></div>
             <p class="name">Russel Stephens</p>
             <p class="function">Chef Cook</p>
           </div>
@@ -296,8 +295,8 @@
               </div>
               <form action="#" method="post">
                 <!-- il faut mettre les inputs dans des div pour pouvoir leur mettre un ::before -->
-                 <div class="inp-with-before">
-                  <input list="Number-of-people" id="Nb-people" placeholder="People"/>
+                <div class="inp-with-before">
+                  <!-- <input list="Number-of-people" id="Nb-people" placeholder="People"/>
                   <i id="datalist-icon" class="fa-solid fa-chevron-down"></i>
                   <datalist id="Number-of-people">
                     <option value="1"></option>
@@ -310,13 +309,43 @@
                     <option value="8"></option>
                     <option value="9"></option>
                     <option value="10"></option>
-                  </datalist>
+                  </datalist> -->
+
+                  <select
+                    name="Number-of-people"
+                    id="Nb-people"
+                    placeholder="People"
+                  >
+                    <option value="">People</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                  </select>
                 </div>
                 <div class="inp-with-before">
-                  <input type="date" id="date" />
+                  <input
+                    type="date"
+                    id="date"
+                    name="booking-date"
+                    value="2025-03-17"
+                    min="2025-03-17"
+                  />
                 </div>
                 <div class="inp-with-before">
-                  <input type="time" id="time" />
+                  <input
+                    type="time"
+                    id="time"
+                    name="booking-time"
+                    min="07:00"
+                    max="21:00"
+                  />
                 </div>
                 <div class="inp-with-before">
                   <input type="text" id="name" placeholder="Name" />
@@ -350,9 +379,8 @@
 
         <div class="sec4-main">
           <!-- *************************** Left part *************************** -->
-           <!-- *************************** Main part *************************** -->
+          <!-- *************************** Main part *************************** -->
           <div class="sec4-main-container">
-
             <!-- Fisrt child -->
             <div class="sec4-main-1">
               <div class="sec4-ml-top">
@@ -433,7 +461,9 @@
         <div class="footer-left">
           <span>Resto</span>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, excepturi! Aliquam debitis ipsa beatae sunt enim architecto, maxime blanditiis, ea amet voluptatum dolorum error rerum!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus,
+            excepturi! Aliquam debitis ipsa beatae sunt enim architecto, maxime
+            blanditiis, ea amet voluptatum dolorum error rerum!
           </p>
         </div>
         <!-- *************************** Right part *************************** -->

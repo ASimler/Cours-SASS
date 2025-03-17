@@ -108,6 +108,12 @@ body {
                 color: $black2;
                 width: 50%;
                 max-width: 1000px;
+                transition: 0.3s;
+
+                
+                @media screen and (max-width:1460px) {
+                    width: 70%;
+                }
                 
                 margin: 0 auto;
                 display: grid;
@@ -172,6 +178,11 @@ body {
                 grid-template-columns: 30% 70%;
                 text-align: center;
 
+                @media screen and (max-width: 1350px) {
+                    display: flex;
+                    flex-direction: column;;
+                }
+
                 .sec3-left {
                     background: $black1;
                     padding: 25px;
@@ -206,7 +217,16 @@ body {
                     color: $black2;
 
                     .sec3-right-container {
-                        margin: 10%;
+                        width: 90%;
+                        margin: 10% auto;
+
+                        @media screen and (max-width:1460px) {
+                            width: 80%;
+                        }
+
+                        @media screen and (max-width:600px) {
+                            width: 60%;
+                        }
 
                         form {
                             display: grid;
@@ -216,17 +236,40 @@ body {
                             "nb date hour"
                             "name phone email"
                             "btn btn btn";
-                            gap: 20px;
+                            gap: 30px;
 
-                            input {
+                            @media screen and (max-width:1460px) {
+                                grid-template-columns: repeat(2, 1fr);
+                                grid-template-rows: 1fr 1fr 1fr 80px;
+                                grid-template-areas: 
+                                "nb date"
+                                "hour name"
+                                "phone email"
+                                "btn btn";
+                            }
+
+                            @media screen and (max-width:800px) {
+                                grid-template-columns: 1fr;
+                                grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 80px;
+                                grid-template-areas: 
+                                "nb"
+                                "date"
+                                "hour"
+                                "name"
+                                "phone"
+                                "email"
+                                "btn";
+                            }
+
+                            input, select {
                                 padding: 15px 0;
                                 background: none;
                                 border: none;
                                 font-size: 0.9rem;
                             }
 
-                            datalist {
-                                
+                            select {
+                                padding-right: 60%;
                             }
 
                             .inp-with-before {
@@ -261,6 +304,22 @@ body {
                                     font-family: Font2;
                                     font-size: 1rem;
                                     letter-spacing: 4px;
+
+                                    @media screen and (max-width: 800px) {
+                                        width: 50%;
+                                    }
+
+                                    @media screen and (max-width: 700px) {
+                                        width: 70%;
+                                    }
+
+                                    @media screen and (max-width: 600px) {
+                                        width: 80%;
+                                    }
+
+                                    @media screen and (max-width: 500px) {
+                                        width: 100%;
+                                    }
                                 }
                             }
 
